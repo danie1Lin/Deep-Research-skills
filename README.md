@@ -119,6 +119,7 @@ config_file = "agents/web-researcher.toml"
 
 | Command (2.1.0+) | Description |
 |------------------|-------------|
+| `/deep-research` | Open-ended Codex deep research with bounded parallel child processes |
 | `/research` | Generate research outline with items and fields |
 | `/research-add-items` | Add more research items to existing outline |
 | `/research-add-fields` | Add more field definitions to existing outline |
