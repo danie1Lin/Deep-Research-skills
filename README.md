@@ -80,6 +80,12 @@ cp -r agents-codex/web-search-modules ~/.codex/agents/
 pip install pyyaml
 ```
 
+The Codex `research-deep` skill uses bounded `codex exec` child processes for
+parallel item research. It keeps the default Codex model/settings, writes prompts
+and logs under `{topic}/.research/`, verifies one or two sample items before the
+full run, skips already valid JSON outputs, and isolates failed children so one
+timeout does not stop the whole batch.
+
 Add or update `~/.codex/config.toml` using either method below:
 
 **Option A: Automatic script**
